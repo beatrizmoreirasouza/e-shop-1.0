@@ -30,21 +30,21 @@
         <button class="movies">Movies</button>
       </div>
       <div class="buttons">
-        <button class="btn signin">
+        <button onclick="openModal()" class="btn signin">
           Sign In &nbsp;
           <i class="fas fa-sign-in-alt"></i>
         </button>
         <button class="btn shop"><i class="fas fa-shopping-cart"></i></button>
       </div>
     </div>
-    <div class="modal">
-      <div class="modal-bg"></div>
+    <div id="modal" class="modal">
+      <div onclick="closeModal()" class="modal-bg"></div>
       <div class="auth">
         <div class="auth-gallery">
           <div class="auth-gallery-img"></div>
         </div>
         <div class="auth-form">
-          <div class="auth-logo">
+          <div onclick="closeModal()" class="auth-logo">
             <span class="auth-logo-icon"><i class="fas fa-cubes"></i></span>
             <span class="auth-logo-text">E-Shop</span>
           </div>
@@ -57,10 +57,11 @@
             <label>Password</label>
             <input type="password" />
           </div>
-          <button class="btn enter">Enter</button>
+          <button onclick="closeModal()" class="btn enter">Enter</button>
           <a href="#" class="btn signup">SignUp</a>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
